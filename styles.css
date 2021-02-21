@@ -1,5 +1,11 @@
 
-* {box-sizing: border-box;}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
 body {
   margin: 0;
@@ -18,7 +24,6 @@ body {
 }
 .track {
   float: right;
- 
   color: #ccc;
   margin-right: 10%;
 }
@@ -161,19 +166,17 @@ body {
 
 
 
-
-
-
-
 .topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
+  background-color: #beb2b2;
+ 
+   height: 50px;
   
   
 }
 
 .topnav a {
-  float: left;
+
   display: block;
   color: black;
   text-align: center;
@@ -232,6 +235,7 @@ body {
   padding: 15px ;
   font-size: 16px;
   border: none;
+
   
 
 }
@@ -239,6 +243,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  
 }
 
 .dropdown-content {
@@ -255,6 +260,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  
 }
 
 .dropdown-content a:hover {
@@ -271,113 +277,84 @@ body {
 
 
 
+  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.sidebar{
+  position: absolute;
+  left: 10;
+  width: 250px;
+  height: 48;
+  background: rgb(205, 231, 151);
 
-
-
-
-
-/* 
-
-.menu {
-  overflow: hidden;
-  background-color: #e9e9e9;
-}
-
-.menu a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.menu a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.menu a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.menu input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-}
-
-
-.manu .search-container button {
  
-  float: right;
-  padding: 6px 10px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  text-align: left;
-  cursor: pointer;
-  border: #000;
 
 }
-
-.manu .search-container button:hover {
-  background: #ccc;
-
-}
-
-
-.manu .search-container {
-  float: right;
-  margin-right: 40%; 
-  
-  
-  margin-left: 200px; /* Same as the width of the sidenav 
-  font-size: 20px; /* Increased text to enable scrolling 
-  padding: 0px 10px;
-}
-
-
-
-
-
-.sidenav {
-  width: 200px;
-  z-index: 1;
-  background-color:rgb(71, 182, 182);
-  overflow-x: hidden;
-  margin-top: 1px;
-  text-align: center;
-
-}
-
-/* Style the sidenav links and the dropdown button 
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px ;
-  text-decoration: none;
+ 
+.sidebar header{
   font-size: 20px;
-  color: #181616;
-  display: block;
-  border: none;
-  background: none;
+  color: #aedce2;
   text-align: center;
+  line-height: 56px;
+  background: #31da37;
+  user-select: none;
+}
+
+.sidebar ul a{
+   display: block;
+   height: 40px;
+   width: 100%;
+   line-height: 50px;
+   color: #382727;
+   padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid #7ebef3;
+   border-bottom: 4px solid rgb(219, 170, 170);
+   transition: 0.4s;
+
+
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+.siderbar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancle{
+
+  position: absolute;
   cursor: pointer;
-  outline: none;
+}
 
-   
+label #btn{
+  left: 40px;
+  top:25px;
+  font-size: 35px;
+  color:#aedce2;
+}
   
+.price {
+color: grey;
+font-size: 22px;
 }
 
-/* On mouse-over 
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #d63232;
+.card button {
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
 }
 
+.card button:hover {
+opacity: 0.7;
+}
 
 /* serchbx */
 
@@ -461,9 +438,99 @@ margin-left: 3%;
   top:0;
   left: 0;
   position:absolute;
-  width: 110px;
-  height: 10%;
+  width: 100px;
+  height: 100%;
   background: linear-gradient(to right, #ff105f, #ffad06);
   border-radius: 30px;
   transition: 0.5s;
+}
+.social-icon img{
+  margin: 30px auto;
+  text-align: center;
+  margin: 0 12px;
+
+
+
+}
+.input{
+  top: 100px;
+  position: absolute;
+  width: 280px;
+  transform: 0.5s;
+
+}
+
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submitbtn
+{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background:  linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  border-radius: 30px;
+
+}
+.chech-box{
+  margin: 30px 10px 30px 0;
+
+}
+.span{
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+#login{
+  left: 50px;
+}
+#reg{
+   left: 450px;
+}
+
+
+/* stoooooooooooooooooooooooooop */
+.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 355px;
+  text-align: center;
+  font-family: arial;
+  margin-left: 15%;
+  margin-right: 15%;
+ 
+
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
